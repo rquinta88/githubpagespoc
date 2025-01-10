@@ -3,7 +3,6 @@ import pytest
 
 
 @allure.suite("Other API")
-@pytest.mark.other
 class TestOther:
 
     @allure.title("Test expected to fail")
