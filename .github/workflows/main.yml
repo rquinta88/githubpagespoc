@@ -62,14 +62,15 @@ jobs:
       - name: Generate Allure Report
         if: always()
         run: | 
-          allure generate results/allure --clean --single-file -o allure-report
+          allure generate results/allure --clean -o allure-report
 
-      - name: Upload Allure Results as Artifact
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: allure-report
-          path: allure-report
+            github_token: ${{ secrets.GITHUB_TOKEN }} 
+            publish_dir: ./allure-report
+            publish_branch: allure-report
+            keep_files: false
 
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
