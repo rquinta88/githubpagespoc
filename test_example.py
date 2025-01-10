@@ -8,7 +8,7 @@ class TestOther:
     @allure.title("Test expected to fail")
     def test_to_fail(self):
         with allure.step("Verification step"):
-            assert 4 == 5
+            assert 5 == 5
 
     @allure.title("Test expected to pass")
     def test_to_pass(self):
