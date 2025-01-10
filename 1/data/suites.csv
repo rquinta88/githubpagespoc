@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jan 10 23:04:24 GMT 2025","Fri Jan 10 23:04:24 GMT 2025","0","","Other API","TestOther","","","Test expected to pass",""
+"failed","Fri Jan 10 23:04:24 GMT 2025","Fri Jan 10 23:04:24 GMT 2025","0","","Other API","TestOther","","","Test expected to fail",""
